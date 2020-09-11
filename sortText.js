@@ -1,11 +1,11 @@
 function sortText(text) {
     let elements = text.split(' ');
     
-    let transformedElement = elements.map( element => {
+    let transformedElements = elements.map( element => {
         return element.split('').sort().join('');
     });
 
-    return transformedElement.join(' ');
+    return transformedElements.join(' ');
 }
 
 module.exports.sortText = sortText;
